@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website with Image Upload and Check</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Section -->
+        <div id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p id="login-error" class="error-message"></p>
+        </div>
+
+        <!-- Upload Section (Hidden until login) -->
+        <div id="upload-section" style="display: none;">
+            <!-- Patient Details Section -->
+            <h2>Enter Patient Details</h2>
+            <form id="patient-details-form">
+                <label for="patient-name">Patient Name:</label>
+                <input type="text" id="patient-name" placeholder="Enter patient name" required><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter age" required><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Enter phone number" required><br>
+                
+                <button type="button" onclick="savePatientDetails()">Save Patient Details</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
