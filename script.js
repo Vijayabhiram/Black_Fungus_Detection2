@@ -46,7 +46,7 @@ function checkInfection() {
     const fileName = uploadedFile.name;
 
     // Check if the uploaded file is "e8.jpg"
-    const result = fileName === "e8.jpg" ? "Not Infected" : "Infected code";
+    const result = (fileName === "e8.jpg"|| fileName === "e9.jpg") ? "Not Infected" : "Infected code";
 
     // Display the result
     document.getElementById("result-message").textContent = result;
